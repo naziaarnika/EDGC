@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 4</title>
+  <style>
+    #para {
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="one.html">Problem 1</a> |
+    <a href="two.html">Problem 2</a> |
+    <a href="three.html">Problem 3</a> |
+    <a href="four.html">Problem 4</a> |
+    <a href="five.html">Problem 5</a> |
+    <a href="six.html">Problem 6</a> |
+    <a href="seven.html">Problem 7</a> |
+    <a href="eight.html">Problem 8</a> |
+    <a href="nine.html">Problem 9</a>
+  </nav>
+
+  <br><br>
+  <h1>Problem 4</h1><br>
+
+  <div>
+    <p id="para">This is a paragraph</p>
+    <button onclick="toggleBold()">Bold</button>
+    <button onclick="toggleItalic()">Italic</button>
+    <button onclick="toggleUnderline()">Underline</button>
+  </div>
+
+  <script>
+    function toggleBold() {
+      const para = document.getElementById('para');
+      para.style.fontWeight = (para.style.fontWeight === 'bold') ? 'normal' : 'bold';
+    }
+
+    function toggleItalic() {
+      const para = document.getElementById('para');
+      para.style.fontStyle = (para.style.fontStyle === 'italic') ? 'normal' : 'italic';
+    }
+
+    function toggleUnderline() {
+      const para = document.getElementById('para');
+      para.style.textDecoration = (para.style.textDecoration === 'underline') ? 'none' : 'underline';
+    }
+  </script>
+</body>
+</html>
